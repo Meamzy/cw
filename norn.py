@@ -24,9 +24,10 @@ def list_all_interfaces():
     # intefaces_info = nr.run(task=napalm_get, getters=["get_interfaces_ip"])
     # print(host.keys())
     nr = InitNornir(config_file="nornir_configuration/config.yaml")
-    nr = nr.inventory.filter(host="R1")
-    intefaces_info = nr.run(task=napalm_get, getters=["get_interfaces_ip"])
-    print_result(intefaces_info)
+    nr.inventory = nr.filter()
+    # nr = nr.inventory.filter(host="R1")
+    # intefaces_info = nr.run(task=napalm_get, getters=["get_interfaces_ip"])
+    # print_result(intefaces_info)
     # print(intefaces_info0])
 
 list_all_interfaces()
