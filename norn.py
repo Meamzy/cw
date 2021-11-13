@@ -2,11 +2,11 @@ from nornir import InitNornir
 from nornir.core.inventory import Host
 import nornir_napalm
 from nornir_utils.plugins.functions import print_result, print_title
-from nornir.core.task import Task as task
+from nornir.core.task import Result, Task as task
 from nornir_jinja2.plugins.tasks import template_file, template_string
 from nornir_netmiko.tasks import netmiko_send_config
 from nornir_napalm.plugins.tasks import napalm_get
-
+import json
 
 
 
@@ -20,15 +20,27 @@ from nornir_napalm.plugins.tasks import napalm_get
 # print_title("Running the interfaces config")
 # result = nr.run(task=allocate_interface,interface_name="FastEthernet3/0 ",ip_address="10.10.11.3",ip_mask="255.255.255.0")
 
+def list_all_hosts():
+    nr = InitNornir(config_file="nornir_configuration/config.yaml")
+    return list(nr.inventory.hosts.keys())
+
+def list_host_interfaces_info(host):
+    nr = InitNornir(config_file="nornir_configuration/config.yaml")
+    nr = nr.filter(name=host)
+    intefaces_info = nr.run(task=napalm_get, getters=["get_interfaces_ip"])
+    return intefaces_info[host][0].result["get_interfaces_ip"]
+    
 def list_all_interfaces():
     # intefaces_info = nr.run(task=napalm_get, getters=["get_interfaces_ip"])
     # print(host.keys())
     nr = InitNornir(config_file="nornir_configuration/config.yaml")
-    nr.inventory = nr.filter()
-    # nr = nr.inventory.filter(host="R1")
-    # intefaces_info = nr.run(task=napalm_get, getters=["get_interfaces_ip"])
-    # print_result(intefaces_info)
+    hosts = list_all_hosts()
+
+    nr = nr.filter(name=hosts[0])
+    intefaces_info = nr.run(task=napalm_get, getters=["get_interfaces_ip"])
+    print_result(intefaces_info)
     # print(intefaces_info0])
 
-list_all_interfaces()
+# print(type(list_host_interfaces_info('R1').result))
+# list_all_interfaces()
 # print(dir(nornir_napalm.plugins))

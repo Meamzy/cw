@@ -35,3 +35,16 @@ no shut
 
 GETTERS:
 https://napalm.readthedocs.io/en/latest/support/#getters-support-matrix
+
+USEFUL LINKS:
+https://www.youtube.com/watch?v=mqhxxeeTbu0
+https://jordantg.com/nornir-lab
+https://ultraconfig.com.au/blog/introduction-to-napalm-network-automation-on-cisco/
+https://nornir.tech/nornir/plugins/
+
+
+GET	The most common method. A GET message is send, and the server returns data
+POST	Used to send HTML form data to the server. The data received by the POST method is not cached by the server.
+HEAD	Same as GET method, but no response body.
+PUT	Replace all current representations of the target resource with uploaded content.
+DELETE	Deletes all current representations of the target resource given by the URL.

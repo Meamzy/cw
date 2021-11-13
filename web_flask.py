@@ -2,15 +2,30 @@
 from flask import Flask, render_template,request
 from napalm import get_network_driver
 import json
-from main import get_config
 from pprint import pprint
+from norn import *
 app = Flask(__name__,template_folder="templates")
 
 
 #main page
 @app.route("/")
 def main_page():
-    configuration = get_config("10.10.10.3","mea","cisco")
-    return render_template("conf.html",conf=configuration)
+    return "Hi ma men"
 
+@app.route('/hosts')
+def form():
+    return render_template("hosts.html",hosts=list_all_hosts())
+
+@app.route("/host", methods = ['POST', 'GET'])
+def hosts_page():
+    if request.method == 'GET':
+        return f"The URL /host is accessed directly. Try going to '/hosts' to submit form"
+    if request.method == 'POST':
+        form_data = request.form
+        hostname = form_data["chosen_host"]
+        interfaces = list_host_interfaces_info(hostname)
+       
+        return render_template("host.html",interfaces=interfaces,hostname=hostname)
+        # return form_data
+    
 
