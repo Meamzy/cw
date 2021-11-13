@@ -1,0 +1,37 @@
+Plan for this work:
+
+
+Installed napalm and it's requirements:
+pip3 install napalm
+sudo apt-get install -y --force-yes libssl-
+
+
+Router_commands:
+no ip domain-lookup
+username mea priv 15 pass cisco
+ip domain-name tsm
+ip ssh ver 2
+crypto key generate rsa general-keys modulus 1024 
+line vty 0 4
+trans in ssh
+login local
+line aux 0
+transport preferred none
+exec-timeout 15 0
+int fa0/0
+ip add dhcp
+no shut
+
+DHCP_Server:
+ip dhcp excluded-address 10.10.10.0 10.10.10.10
+ip dhcp pool CourseDHCP
+network 10.10.10.0 255.255.255.0
+default-router 10.10.10.2
+dns-server 10.10.10.2
+int fa0/0 
+ip add 10.10.10.1 255.255.255.0  
+no shut 
+
+
+GETTERS:
+https://napalm.readthedocs.io/en/latest/support/#getters-support-matrix

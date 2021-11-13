@@ -1,0 +1,1575 @@
+2021-11-13 15:40:25,068 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {} on 1 hosts
+2021-11-13 15:40:25,071 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'allocate_interface' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: allocate_interface() missing 2 required positional arguments: 'ip_address' and 'ip_mask'
+
+2021-11-13 15:43:22,160 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'fa0/0', 'ip_address': '10.10.10.3', 'ip_mask': '255.255.255.0'} on 1 hosts
+2021-11-13 15:43:22,162 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'allocate_interface' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: allocate_interface() got multiple values for argument 'interface_name'
+
+2021-11-13 15:43:50,059 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'fa0/0', 'ip_address': '10.10.10.3', 'ip_mask': '255.255.255.0'} on 1 hosts
+2021-11-13 15:43:50,061 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'allocate_interface' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: allocate_interface() got multiple values for argument 'interface_name'
+
+2021-11-13 15:45:40,040 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'fa0/0', 'ip_address': '10.10.10.3', 'ip_mask': '255.255.255.0'} on 1 hosts
+2021-11-13 15:45:40,041 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'allocate_interface' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: allocate_interface() got multiple values for argument 'interface_name'
+
+2021-11-13 15:46:01,159 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'fa0/0'} on 1 hosts
+2021-11-13 15:46:01,162 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'allocate_interface' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: allocate_interface() got multiple values for argument 'interface_name'
+
+2021-11-13 15:46:13,212 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'fa0/0', 'ip_address': '10.10.10.3', 'ip_mask': '255.255.255.0'} on 1 hosts
+2021-11-13 15:46:13,214 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'allocate_interface' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: allocate_interface() got multiple values for argument 'interface_name'
+
+2021-11-13 15:46:44,473 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'fa0/0', 'ip_address': '10.10.10.3', 'ip_mask': '255.255.255.0'} on 1 hosts
+2021-11-13 15:46:44,476 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'allocate_interface' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: allocate_interface() got multiple values for argument 'interface_name'
+
+2021-11-13 15:47:11,487 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {} on 1 hosts
+2021-11-13 15:47:11,489 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'allocate_interface' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: allocate_interface() missing 2 required positional arguments: 'ip_address' and 'ip_mask'
+
+2021-11-13 15:47:21,481 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'fa0/0', 'ip_address': '10.10.10.3', 'ip_mask': '255.255.255.0'} on 1 hosts
+2021-11-13 15:47:21,486 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 42, in template_file
+    t = env.get_template(template)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/jinja2/environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/jinja2/environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/jinja2/loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/jinja2/loaders.py", line 214, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: interface
+
+2021-11-13 15:47:21,486 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'allocate_interface' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/mnt/e/University/3 course/CW/norn.py", line 10, in allocate_interface
+    inteface_config = task.run(task=template_file,template="interface",path="configuration/")
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2021-11-13 15:47:33,155 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'fa0/0', 'ip_address': '10.10.10.3', 'ip_mask': '255.255.255.0'} on 1 hosts
+2021-11-13 15:47:33,166 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 43, in template_file
+    text = t.render(host=task.host, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "configuration/interface.j2", line 1, in top-level template code
+    interface {{interface_name}}
+jinja2.exceptions.UndefinedError: 'interface_name' is undefined
+
+2021-11-13 15:47:33,166 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'allocate_interface' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/mnt/e/University/3 course/CW/norn.py", line 10, in allocate_interface
+    inteface_config = task.run(task=template_file,template="interface.j2",path="configuration/")
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2021-11-13 15:48:27,506 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'fa0/0', 'ip_address': '10.10.10.3', 'ip_mask': '255.255.255.0'} on 1 hosts
+2021-11-13 15:48:27,514 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'template_file' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_jinja2/plugins/tasks/template_file.py", line 43, in template_file
+    text = t.render(host=task.host, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/jinja2/environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "configuration/interface.j2", line 2, in top-level template code
+    ip add {{ip_addres}} {{ip_mask}}
+jinja2.exceptions.UndefinedError: 'ip_addres' is undefined
+
+2021-11-13 15:48:27,515 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'allocate_interface' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/mnt/e/University/3 course/CW/norn.py", line 10, in allocate_interface
+    inteface_config = task.run(task=template_file,template="interface.j2",path="configuration/",interface_name=interface_name,ip_address=ip_address,ip_mask=ip_mask)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: template_file (failed)
+
+
+2021-11-13 15:48:44,576 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'fa0/0', 'ip_address': '10.10.10.3', 'ip_mask': '255.255.255.0'} on 1 hosts
+2021-11-13 15:48:45,390 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 38, in netmiko_send_config
+    result = net_connect.send_config_set(config_commands=config_commands, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 1930, in send_config_set
+    output += self.exit_config_mode()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco_base_connection.py", line 54, in exit_config_mode
+    return super().exit_config_mode(exit_config=exit_config, pattern=pattern)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 1789, in exit_config_mode
+    raise ValueError("Failed to exit configuration mode")
+ValueError: Failed to exit configuration mode
+
+2021-11-13 15:48:45,391 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'allocate_interface' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/mnt/e/University/3 course/CW/norn.py", line 14, in allocate_interface
+    task.run(task=netmiko_send_config,config_commands=inteface_config_send)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_config (failed)
+
+
+2021-11-13 15:49:05,993 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'fa0/0', 'ip_address': '10.10.10.3', 'ip_mask': '255.255.255.0'} on 1 hosts
+2021-11-13 15:49:06,807 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 38, in netmiko_send_config
+    result = net_connect.send_config_set(config_commands=config_commands, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 1930, in send_config_set
+    output += self.exit_config_mode()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco_base_connection.py", line 54, in exit_config_mode
+    return super().exit_config_mode(exit_config=exit_config, pattern=pattern)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 1789, in exit_config_mode
+    raise ValueError("Failed to exit configuration mode")
+ValueError: Failed to exit configuration mode
+
+2021-11-13 15:49:06,808 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'allocate_interface' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/mnt/e/University/3 course/CW/norn.py", line 14, in allocate_interface
+    task.run(task=netmiko_send_config,config_commands=inteface_config_send)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_config (failed)
+
+
+2021-11-13 15:50:30,391 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'fa0/0', 'ip_address': '10.10.10.3', 'ip_mask': '255.255.255.0'} on 1 hosts
+2021-11-13 15:50:51,097 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/channel.py", line 699, in recv
+    out = self.in_buffer.read(nbytes, self.timeout)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/buffered_pipe.py", line 164, in read
+    raise PipeTimeout()
+paramiko.buffered_pipe.PipeTimeout
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 573, in _read_channel_expect
+    new_data = self.remote_conn.recv(MAX_BUFFER)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/channel.py", line 701, in recv
+    raise socket.timeout()
+TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 38, in netmiko_send_config
+    result = net_connect.send_config_set(config_commands=config_commands, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 1921, in send_config_set
+    new_output = self.read_until_pattern(pattern=pattern)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 583, in _read_channel_expect
+    raise NetmikoTimeoutException(
+netmiko.ssh_exception.NetmikoTimeoutException: Timed-out reading channel, data not available.
+
+2021-11-13 15:50:51,098 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'allocate_interface' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/mnt/e/University/3 course/CW/norn.py", line 14, in allocate_interface
+    task.run(task=netmiko_send_config,config_commands=inteface_config_send)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_config (failed)
+
+
+2021-11-13 15:51:28,674 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'fa0/0', 'ip_address': '10.10.10.3', 'ip_mask': '255.255.255.0'} on 1 hosts
+2021-11-13 15:51:29,583 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 38, in netmiko_send_config
+    result = net_connect.send_config_set(config_commands=config_commands, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 1930, in send_config_set
+    output += self.exit_config_mode()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco_base_connection.py", line 54, in exit_config_mode
+    return super().exit_config_mode(exit_config=exit_config, pattern=pattern)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 1789, in exit_config_mode
+    raise ValueError("Failed to exit configuration mode")
+ValueError: Failed to exit configuration mode
+
+2021-11-13 15:51:29,583 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'allocate_interface' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/mnt/e/University/3 course/CW/norn.py", line 14, in allocate_interface
+    task.run(task=netmiko_send_config,config_commands=inteface_config_send)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_config (failed)
+
+
+2021-11-13 15:53:10,944 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'fa0/0', 'ip_address': '10.10.10.3', 'ip_mask': '255.255.255.0'} on 1 hosts
+2021-11-13 15:53:11,800 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 38, in netmiko_send_config
+    result = net_connect.send_config_set(config_commands=config_commands, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 1930, in send_config_set
+    output += self.exit_config_mode()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco_base_connection.py", line 54, in exit_config_mode
+    return super().exit_config_mode(exit_config=exit_config, pattern=pattern)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 1789, in exit_config_mode
+    raise ValueError("Failed to exit configuration mode")
+ValueError: Failed to exit configuration mode
+
+2021-11-13 15:53:11,800 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'allocate_interface' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/mnt/e/University/3 course/CW/norn.py", line 14, in allocate_interface
+    task.run(task=netmiko_send_config,config_commands=inteface_config_send)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_config (failed)
+
+
+2021-11-13 15:59:47,842 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'fa0/0', 'ip_address': '10.10.10.3', 'ip_mask': '255.255.255.0'} on 1 hosts
+2021-11-13 15:59:48,764 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 38, in netmiko_send_config
+    result = net_connect.send_config_set(config_commands=config_commands, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 1930, in send_config_set
+    output += self.exit_config_mode()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco_base_connection.py", line 54, in exit_config_mode
+    return super().exit_config_mode(exit_config=exit_config, pattern=pattern)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 1789, in exit_config_mode
+    raise ValueError("Failed to exit configuration mode")
+ValueError: Failed to exit configuration mode
+
+2021-11-13 15:59:48,765 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'allocate_interface' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/mnt/e/University/3 course/CW/norn.py", line 14, in allocate_interface
+    task.run(task=netmiko_send_config,config_commands=inteface_config_send)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_config (failed)
+
+
+2021-11-13 16:00:31,625 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'FastEthernet0/0 ', 'ip_address': '10.10.10.3', 'ip_mask': '255.255.255.0'} on 1 hosts
+2021-11-13 16:00:32,518 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 38, in netmiko_send_config
+    result = net_connect.send_config_set(config_commands=config_commands, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 1930, in send_config_set
+    output += self.exit_config_mode()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco_base_connection.py", line 54, in exit_config_mode
+    return super().exit_config_mode(exit_config=exit_config, pattern=pattern)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 1789, in exit_config_mode
+    raise ValueError("Failed to exit configuration mode")
+ValueError: Failed to exit configuration mode
+
+2021-11-13 16:00:32,518 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'allocate_interface' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/mnt/e/University/3 course/CW/norn.py", line 14, in allocate_interface
+    task.run(task=netmiko_send_config,config_commands=inteface_config_send)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_config (failed)
+
+
+2021-11-13 16:02:12,376 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'FastEthernet0/0 ', 'ip_address': '10.10.10.3', 'ip_mask': '255.255.255.0'} on 1 hosts
+2021-11-13 16:02:13,268 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 38, in netmiko_send_config
+    result = net_connect.send_config_set(config_commands=config_commands, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 1930, in send_config_set
+    output += self.exit_config_mode()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco_base_connection.py", line 54, in exit_config_mode
+    return super().exit_config_mode(exit_config=exit_config, pattern=pattern)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 1789, in exit_config_mode
+    raise ValueError("Failed to exit configuration mode")
+ValueError: Failed to exit configuration mode
+
+2021-11-13 16:02:13,269 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'allocate_interface' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/mnt/e/University/3 course/CW/norn.py", line 14, in allocate_interface
+    task.run(task=netmiko_send_config,config_commands=inteface_config_send)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_config (failed)
+
+
+2021-11-13 16:04:53,384 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'FastEthernet0/0 ', 'ip_address': '10.10.10.3', 'ip_mask': '255.255.255.0'} on 1 hosts
+2021-11-13 16:05:22,561 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'FastEthernet0/0 ', 'ip_address': '10.10.10.3', 'ip_mask': '255.255.255.0'} on 1 hosts
+2021-11-13 16:05:47,972 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'FastEthernet0/0 ', 'ip_address': '10.10.11.3', 'ip_mask': '255.255.255.0'} on 1 hosts
+2021-11-13 16:08:04,842 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'FastEthernet0/0 ', 'ip_address': '10.10.11.3', 'ip_mask': '255.255.255.0'} on 1 hosts
+2021-11-13 16:08:05,474 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 33, in netmiko_send_config
+    raise ValueError("netmiko_send_config does not support dry_run")
+ValueError: netmiko_send_config does not support dry_run
+
+2021-11-13 16:08:05,475 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'allocate_interface' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/mnt/e/University/3 course/CW/norn.py", line 14, in allocate_interface
+    task.run(task=netmiko_send_config,config_commands=inteface_config_send)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_config (failed)
+
+
+2021-11-13 16:08:15,414 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'FastEthernet0/0 ', 'ip_address': '10.10.11.3', 'ip_mask': '255.255.255.0'} on 1 hosts
+2021-11-13 16:18:08,147 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'FastEthernet0/0 ', 'ip_address': '10.10.11.3', 'ip_mask': '255.255.255.0'} on 2 hosts
+2021-11-13 16:18:12,204 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 935, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 368, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 10.10.10.20
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 326, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco/cisco_ios.py", line 17, in __init__
+    return super().__init__(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 350, in __init__
+    self._open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 355, in _open
+    self.establish_connection()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 957, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.ssh_exception.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.10.10.20:22
+
+
+
+2021-11-13 16:18:12,205 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'allocate_interface' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/mnt/e/University/3 course/CW/norn.py", line 14, in allocate_interface
+    task.run(task=netmiko_send_config,config_commands=inteface_config_send)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_config (failed)
+
+
+2021-11-13 16:18:20,339 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'FastEthernet0/0 ', 'ip_address': '10.10.11.3', 'ip_mask': '255.255.255.0'} on 2 hosts
+2021-11-13 16:18:22,399 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 935, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 368, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 10.10.10.20
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 326, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco/cisco_ios.py", line 17, in __init__
+    return super().__init__(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 350, in __init__
+    self._open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 355, in _open
+    self.establish_connection()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 957, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.ssh_exception.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.10.10.20:22
+
+
+
+2021-11-13 16:18:22,400 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'allocate_interface' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/mnt/e/University/3 course/CW/norn.py", line 14, in allocate_interface
+    task.run(task=netmiko_send_config,config_commands=inteface_config_send)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_config (failed)
+
+
+2021-11-13 16:19:06,755 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'FastEthernet0/0 ', 'ip_address': '10.10.11.3', 'ip_mask': '255.255.255.0'} on 2 hosts
+2021-11-13 16:38:19,389 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'FastEthernet0/0 ', 'ip_address': '10.10.11.3', 'ip_mask': '255.255.255.0'} on 2 hosts
+2021-11-13 16:38:21,493 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 935, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 368, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 10.10.10.12
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 326, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco/cisco_ios.py", line 17, in __init__
+    return super().__init__(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 350, in __init__
+    self._open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 355, in _open
+    self.establish_connection()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 957, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.ssh_exception.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.10.10.12:22
+
+
+
+2021-11-13 16:38:21,494 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'allocate_interface' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/mnt/e/University/3 course/CW/norn.py", line 14, in allocate_interface
+    task.run(task=netmiko_send_config,config_commands=inteface_config_send)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_config (failed)
+
+
+2021-11-13 16:46:29,651 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'FastEthernet0/0 ', 'ip_address': '10.10.11.3', 'ip_mask': '255.255.255.0'} on 2 hosts
+2021-11-13 16:46:57,351 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/channel.py", line 699, in recv
+    out = self.in_buffer.read(nbytes, self.timeout)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/buffered_pipe.py", line 164, in read
+    raise PipeTimeout()
+paramiko.buffered_pipe.PipeTimeout
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 573, in _read_channel_expect
+    new_data = self.remote_conn.recv(MAX_BUFFER)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/channel.py", line 701, in recv
+    raise socket.timeout()
+TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 38, in netmiko_send_config
+    result = net_connect.send_config_set(config_commands=config_commands, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 1912, in send_config_set
+    new_output = self.read_until_pattern(pattern=re.escape(cmd.strip()))
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 583, in _read_channel_expect
+    raise NetmikoTimeoutException(
+netmiko.ssh_exception.NetmikoTimeoutException: Timed-out reading channel, data not available.
+
+2021-11-13 16:46:57,352 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'allocate_interface' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/mnt/e/University/3 course/CW/norn.py", line 14, in allocate_interface
+    task.run(task=netmiko_send_config,config_commands=inteface_config_send)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_config (failed)
+
+
+2021-11-13 16:47:26,631 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'FastEthernet0/0 ', 'ip_address': '10.10.11.3', 'ip_mask': '255.255.255.0'} on 2 hosts
+2021-11-13 16:47:31,652 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 935, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/util.py", line 283, in retry_on_signal
+    return function()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 326, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco/cisco_ios.py", line 17, in __init__
+    return super().__init__(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 350, in __init__
+    self._open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 355, in _open
+    self.establish_connection()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 957, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.ssh_exception.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.10.10.11:22
+
+
+
+2021-11-13 16:47:31,653 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'allocate_interface' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/mnt/e/University/3 course/CW/norn.py", line 14, in allocate_interface
+    task.run(task=netmiko_send_config,config_commands=inteface_config_send)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_config (failed)
+
+
+2021-11-13 16:48:19,156 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'FastEthernet3/0 ', 'ip_address': '10.10.11.3', 'ip_mask': '255.255.255.0'} on 2 hosts
+2021-11-13 16:48:24,173 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 935, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/util.py", line 283, in retry_on_signal
+    return function()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 326, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco/cisco_ios.py", line 17, in __init__
+    return super().__init__(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 350, in __init__
+    self._open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 355, in _open
+    self.establish_connection()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 957, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.ssh_exception.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.10.10.11:22
+
+
+
+2021-11-13 16:48:24,174 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'allocate_interface' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/mnt/e/University/3 course/CW/norn.py", line 14, in allocate_interface
+    task.run(task=netmiko_send_config,config_commands=inteface_config_send)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: netmiko_send_config (failed)
+
+
+2021-11-13 16:48:43,168 -  nornir.core -     INFO -        run() - Running task 'allocate_interface' with args {'interface_name': 'FastEthernet3/0 ', 'ip_address': '10.10.11.3', 'ip_mask': '255.255.255.0'} on 2 hosts
+2021-11-13 16:59:20,587 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces_ip']} on 2 hosts
+2021-11-13 17:01:11,232 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces']} on 2 hosts
+2021-11-13 17:01:26,129 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces brief']} on 2 hosts
+2021-11-13 17:01:27,237 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_interfaces brief'
+
+2021-11-13 17:01:28,166 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_interfaces brief'
+
+2021-11-13 17:01:39,164 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces_name']} on 2 hosts
+2021-11-13 17:01:40,276 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_interfaces_name'
+
+2021-11-13 17:01:41,236 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_interfaces_name'
+
+2021-11-13 17:01:48,700 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces_ip']} on 2 hosts
+2021-11-13 17:02:50,788 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces_ip']} on 2 hosts
+2021-11-13 17:03:09,518 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['bgp', 'interfaces_ip']} on 2 hosts
+2021-11-13 17:03:10,347 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_bgp'
+
+2021-11-13 17:03:10,849 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_bgp'
+
+2021-11-13 17:04:05,390 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_bgp_config', 'interfaces_ip']} on 2 hosts
+2021-11-13 17:06:12,527 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_bgp_config', 'interfaces_ip']} on 2 hosts
+2021-11-13 17:10:00,408 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_bgp_config', 'interfaces_ip']} on 2 hosts
+2021-11-13 17:10:04,409 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 44, in napalm_get
+    result[g] = method(**options)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/ios/ios.py", line 1358, in get_bgp_config
+    afi = afi_list[0]
+IndexError: list index out of range
+
+2021-11-13 17:10:04,891 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 44, in napalm_get
+    result[g] = method(**options)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/ios/ios.py", line 1358, in get_bgp_config
+    afi = afi_list[0]
+IndexError: list index out of range
+
+2021-11-13 17:10:44,275 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_bgp_neighbors', 'interfaces_ip']} on 2 hosts
+2021-11-13 17:11:28,762 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_bgp_neighbors_detai', 'interfaces_ip']} on 2 hosts
+2021-11-13 17:11:29,581 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_bgp_neighbors_detai'
+
+2021-11-13 17:11:30,065 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_bgp_neighbors_detai'
+
+2021-11-13 17:11:42,565 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_bgp_neighbors_detail', 'interfaces_ip']} on 2 hosts
+2021-11-13 17:12:21,396 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_bgp_config', 'interfaces_ip']} on 2 hosts
+2021-11-13 17:12:25,605 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 44, in napalm_get
+    result[g] = method(**options)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/ios/ios.py", line 1358, in get_bgp_config
+    afi = afi_list[0]
+IndexError: list index out of range
+
+2021-11-13 17:12:25,788 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 44, in napalm_get
+    result[g] = method(**options)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/ios/ios.py", line 1358, in get_bgp_config
+    afi = afi_list[0]
+IndexError: list index out of range
+
+2021-11-13 17:14:31,689 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 2 hosts
+2021-11-13 17:15:11,696 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_bgp_neighbors', 'get_config']} on 2 hosts
+2021-11-13 17:15:22,337 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_bgp_neighbors']} on 2 hosts
+2021-11-13 17:16:51,862 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 2 hosts
+2021-11-13 17:17:33,123 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 2 hosts
+2021-11-13 17:17:50,969 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 2 hosts
+2021-11-13 17:19:47,468 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces', 'get_interfaces_ip']} on 2 hosts
+2021-11-13 17:20:02,774 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces', 'get_interfaces_ip']} on 2 hosts
+2021-11-13 17:20:13,349 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces', 'get_interfaces_ip']} on 2 hosts
+2021-11-13 17:20:34,820 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces', 'get_interfaces_ip']} on 2 hosts
+2021-11-13 17:21:07,833 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 2 hosts
+2021-11-13 17:21:23,764 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 2 hosts
+2021-11-13 17:21:49,796 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 2 hosts
+2021-11-13 17:22:36,246 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 2 hosts
+2021-11-13 17:22:49,228 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 2 hosts
+2021-11-13 17:23:19,812 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 2 hosts
+2021-11-13 17:23:41,431 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 2 hosts
+2021-11-13 17:23:53,953 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 2 hosts
+2021-11-13 17:24:12,239 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 2 hosts
+2021-11-13 17:24:27,905 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 2 hosts
+2021-11-13 17:29:09,825 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'host': Host: R1, 'getters': ['get_interfaces_ip']} on 2 hosts
+2021-11-13 17:29:10,685 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 40, in napalm_get
+    options = copy.deepcopy(kwargs)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 211, in _deepcopy_tuple
+    y = [deepcopy(a, memo) for a in x]
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 211, in <listcomp>
+    y = [deepcopy(a, memo) for a in x]
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 161, in deepcopy
+    rv = reductor(4)
+TypeError: cannot pickle '_thread.lock' object
+
+2021-11-13 17:29:11,151 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 40, in napalm_get
+    options = copy.deepcopy(kwargs)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 211, in _deepcopy_tuple
+    y = [deepcopy(a, memo) for a in x]
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 211, in <listcomp>
+    y = [deepcopy(a, memo) for a in x]
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 161, in deepcopy
+    rv = reductor(4)
+TypeError: cannot pickle '_thread.lock' object
+
+2021-11-13 17:29:25,623 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'host': Host: R1, 'getters': ['get_interfaces_ip']} on 2 hosts
+2021-11-13 17:29:26,569 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 40, in napalm_get
+    options = copy.deepcopy(kwargs)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 211, in _deepcopy_tuple
+    y = [deepcopy(a, memo) for a in x]
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 211, in <listcomp>
+    y = [deepcopy(a, memo) for a in x]
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 161, in deepcopy
+    rv = reductor(4)
+TypeError: cannot pickle '_thread.lock' object
+
+2021-11-13 17:29:26,949 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 40, in napalm_get
+    options = copy.deepcopy(kwargs)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 211, in _deepcopy_tuple
+    y = [deepcopy(a, memo) for a in x]
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 211, in <listcomp>
+    y = [deepcopy(a, memo) for a in x]
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 161, in deepcopy
+    rv = reductor(4)
+TypeError: cannot pickle '_thread.lock' object
+
+2021-11-13 17:29:36,937 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'host': Host: R1, 'getters': ['get_interfaces_ip']} on 2 hosts
+2021-11-13 17:29:37,798 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 40, in napalm_get
+    options = copy.deepcopy(kwargs)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 211, in _deepcopy_tuple
+    y = [deepcopy(a, memo) for a in x]
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 211, in <listcomp>
+    y = [deepcopy(a, memo) for a in x]
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 161, in deepcopy
+    rv = reductor(4)
+TypeError: cannot pickle '_thread.lock' object
+
+2021-11-13 17:29:38,209 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 40, in napalm_get
+    options = copy.deepcopy(kwargs)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 211, in _deepcopy_tuple
+    y = [deepcopy(a, memo) for a in x]
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 211, in <listcomp>
+    y = [deepcopy(a, memo) for a in x]
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 161, in deepcopy
+    rv = reductor(4)
+TypeError: cannot pickle '_thread.lock' object
+
+2021-11-13 17:29:57,397 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'hosts': Host: R1, 'getters': ['get_interfaces_ip']} on 2 hosts
+2021-11-13 17:29:58,316 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 40, in napalm_get
+    options = copy.deepcopy(kwargs)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 211, in _deepcopy_tuple
+    y = [deepcopy(a, memo) for a in x]
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 211, in <listcomp>
+    y = [deepcopy(a, memo) for a in x]
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 161, in deepcopy
+    rv = reductor(4)
+TypeError: cannot pickle '_thread.lock' object
+
+2021-11-13 17:29:58,666 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 40, in napalm_get
+    options = copy.deepcopy(kwargs)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 211, in _deepcopy_tuple
+    y = [deepcopy(a, memo) for a in x]
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 211, in <listcomp>
+    y = [deepcopy(a, memo) for a in x]
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 161, in deepcopy
+    rv = reductor(4)
+TypeError: cannot pickle '_thread.lock' object
+
+2021-11-13 17:30:09,514 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'host': Host: R1, 'getters': ['get_interfaces_ip']} on 2 hosts
+2021-11-13 17:30:10,477 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 40, in napalm_get
+    options = copy.deepcopy(kwargs)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 211, in _deepcopy_tuple
+    y = [deepcopy(a, memo) for a in x]
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 211, in <listcomp>
+    y = [deepcopy(a, memo) for a in x]
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 161, in deepcopy
+    rv = reductor(4)
+TypeError: cannot pickle '_thread.lock' object
+
+2021-11-13 17:30:10,877 - nornir.core.task -    ERROR -      start() - Host 'R5': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 40, in napalm_get
+    options = copy.deepcopy(kwargs)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 211, in _deepcopy_tuple
+    y = [deepcopy(a, memo) for a in x]
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 211, in <listcomp>
+    y = [deepcopy(a, memo) for a in x]
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/linuxbrew/.linuxbrew/opt/python@3.10/lib/python3.10/copy.py", line 161, in deepcopy
+    rv = reductor(4)
+TypeError: cannot pickle '_thread.lock' object
+
+2021-11-13 17:30:21,068 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 2 hosts
+2021-11-13 17:32:01,811 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 2 hosts

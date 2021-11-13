@@ -1,0 +1,14 @@
+---
+R1:
+    hostname: 10.10.10.3
+    groups:
+        - Router
+    data:
+        host: R1
+
+R5:
+    hostname: 10.10.10.12
+    groups:
+        - Router
+    data:
+        host: R5
