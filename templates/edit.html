@@ -1,4 +1,15 @@
+{% extends "base.html" %}
+{% block title %} Applying results  {% endblock %}
 
-<a href="/hosts">Get back to the router</a>
-<p>Result will be here</p>
-{{ data }}
+{% block body %}
+<body class="bg-secondary text-white">
+
+<div class="media position-relative">
+    <div class="media-body">
+      <h5 class="mt-0">{{ data }}</h5>
+      <p>The results of your request displayed above, thanks for using our service</p>
+      <a href="/hosts" class="stretched-link">Go back to the hosts</a>
+    </div>
+  </div>
+</body>
+{% endblock %}

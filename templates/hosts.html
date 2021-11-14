@@ -1,24 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Routers</title>
-</head>
-<body>
-    <article>
-        <form action="/interfaces" method = "POST">
-            <label for="chosen_host">Choose a router:</label>
-            <select name="chosen_host" id="chosen_host">
-              {% for host in hosts %}
-                <option value="{{ host }}">{{ host }}</option>
-              {% endfor %}
-            </select>
-            <br><br>
-            <input type="submit" value="Submit">
-          </form>
-        
-    </article>
+{% extends "base.html" %}
+{% block title %}Routers {% endblock %}
+
+{% block body %}
+<body class="bg-secondary text-white">
+<article>
+  <form action="/interfaces" method="POST">
+    <label for="chosen_host" class="display-4">Choose a router:</label>
+    <select name="chosen_host" id="chosen_host" class="form-control form-control-lg">
+      {% for host in hosts %}
+      <option value="{{ host }}">{{ host }}</option>
+      {% endfor %}
+    </select>
+    <br><br>
+    <input type="submit" value="Show interfaces" class="btn btn-dark btn-lg btn-block">
+  </form>
+
+</article>
 </body>
-</html>
+{% endblock %}

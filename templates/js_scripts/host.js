@@ -4,17 +4,17 @@ var interfaces_ip = {{ interfaces_ip| tojson }}
 function apply_check() {
     var ip_adress = document.getElementById("ipv4_address");
     var ip_mask = document.getElementById("ipv4_mask");
-    if (ip_mask.value != null || ip_adress.value != null){
-        ip_adress.setAttribute('required','required');
-        ip_mask.setAttribute('required','required');
+    if (ip_mask.value != null || ip_adress.value != null) {
+        ip_adress.setAttribute('required', 'required');
+        ip_mask.setAttribute('required', 'required');
     }
     else {
-    if(ip_adress.hasAttribute('required')) {
-        ip_adress.removeAttribute('required')
-    };
-    if(ip_mask.hasAttribute('required')) {
-        ip_mask.removeAttribute('required')
-    };
+        if (ip_adress.hasAttribute('required')) {
+            ip_adress.removeAttribute('required')
+        };
+        if (ip_mask.hasAttribute('required')) {
+            ip_mask.removeAttribute('required')
+        };
     }
 }
 
@@ -65,7 +65,6 @@ function select_interface_info() {
     document.getElementById("save_interface").style.display = "none";
 
     var interface_name = document.getElementById("chosen_interface").value;
-    document.getElementById("interface_name").textContent = interface_name;
     document.getElementById("enabled_status").value = interfaces_info[interface_name]["is_enabled"];
     document.getElementById("up_status").textContent = interfaces_info[interface_name]["is_up"];
     document.getElementById("description").value = interfaces_info[interface_name]["description"];

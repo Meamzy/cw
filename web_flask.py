@@ -13,11 +13,11 @@ def main_page():
     return "Hi ma men"
 
 @app.route('/hosts')
-def form():
+def hosts():
     return render_template("hosts.html",hosts=list_all_hosts())
 
 @app.route("/interfaces", methods = ['POST', 'GET'])
-def hosts_page():
+def host_page():
     if request.method == 'GET':
         return f"The URL /host is accessed directly. Try going to '/hosts' to submit form"
     if request.method == 'POST':

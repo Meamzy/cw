@@ -32,6 +32,15 @@ int fa0/0
 ip add 10.10.10.1 255.255.255.0  
 no shut 
 
+BGP_Config:
+int lo0
+ip add 172.168.32.0 255.255.255.0
+
+router bgp 200
+bgp router-id 1.1.1.1 
+network 172.168.32.0 mask 255.255.255.0
+
+
 
 GETTERS:
 https://napalm.readthedocs.io/en/latest/support/#getters-support-matrix

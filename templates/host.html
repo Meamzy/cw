@@ -1,51 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Routers</title>
-</head>
-<body onload="select_interface_info()">
-    {% block content %}
-    <article>
-            <form action="/edit" method="post" onsubmit="return checkform()">
-            <label for="chosen_interface">Choose interface</label>
-            <select name="chosen_interface" id="chosen_interface" onchange="select_interface_info()";>
-            {% for interface in interfaces_info.keys() %}
-                <option value="{{ interface }}">{{ interface }}</option>
-            {% endfor %}
-            </select>
-              <table id="interface_info">   
-                  <tbody><tr>
-                      <th id="interface_name"">FastEthernet0/0</th><th>Status</th>  
-                  </tr>
-                  <tr><td>ipv4_address:</td> <td><input id="ipv4_address" type="text" value="" name="ipv4_address"></td></tr>
-                  <tr><td>ipv4_mask:</td> <td><input id="ipv4_mask" type="text" value="" name="ipv4_mask"></td></tr>
-                  <tr><td>is_enabled:</td> <td>
-                      <select id="enabled_status" name="enabled_status">
-                          <option value="true">Up</option>
-                          <option value="false">Down</option>
-                      </select></td></tr>
-                  <tr><td>description</td> <td><input id="description" type="text" value="" name="description"></td></tr>
-                  <tr><td>is_up</td> <td id="up_status">true</td></tr>
-                  <tr><td>mac_address</td> <td id="mac_address">C4:01:03:DE:00:00</td></tr>
-                  <tr><td>last_flapped</td> <td id="last_flapped">-1</td></tr>
-                  <tr><td>speed</td> <td id="speed">10</td></tr>
-                  <tr><td>mtu</td> <td id="mtu">1500</td></tr>
-              </tbody></table>
-              <input id="edit_button" type="button" value="Edit interface" onclick="edit_interface()">
-              <input id="save_interface" type="submit" value="Apply" onsubmit="apply_check()">
-            </form>
+{% extends "base.html" %}
 
-    </article>
-    {% block javascript %}
-          <script>
-            {% include "js_scripts/host.js" %}
-          </script>
-      {% endblock %}
-    {% endblock %}
-    
-    
+{% block title %} Routers {% endblock %}
+{% block body %}
+
+<body onload="select_interface_info()" class="bg-secondary text-white">
+  
+  <article  onload="select_interface_info();">
+    <form action="/edit" method="post" onsubmit="return checkform()">
+      <input name="hostname" class=".h3 bg-secondary text-white" value="{{ hostname }}" readonly/>
+      <select name="chosen_interface" id="chosen_interface" onchange="select_interface_info();" class="form-control form-control-sm bg-secondary text-white" >
+        {% for interface in interfaces_info.keys() %}
+        <option value="{{ interface }}">{{ interface }}</option>
+        {% endfor %}
+      </select>
+      <table id="interface_info" class="table table-dark">
+        <tbody>
+          <tr>
+            <th id="interface_name">Attribute</th><th>Status</th>  
+                  </tr>
+                  <tr><td>ipv4_address:</td> <td><input id="ipv4_address" type="text" value="" name="ipv4_address">
+              </td>
+          </tr>
+          <tr>
+            <td>ipv4_mask:</td>
+            <td><input id="ipv4_mask" type="text" value="" name="ipv4_mask"></td>
+          </tr>
+          <tr>
+            <td>is_enabled:</td>
+            <td>
+              <select id="enabled_status" name="enabled_status">
+                <option value="true">Up</option>
+                <option value="false">Down</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>description</td>
+            <td><input id="description" type="text" value="" name="description"></td>
+          </tr>
+          <tr>
+            <td>is_up</td>
+            <td id="up_status">true</td>
+          </tr>
+          <tr>
+            <td>mac_address</td>
+            <td id="mac_address">C4:01:03:DE:00:00</td>
+          </tr>
+          <tr>
+            <td>last_flapped</td>
+            <td id="last_flapped">-1</td>
+          </tr>
+          <tr>
+            <td>speed</td>
+            <td id="speed">10</td>
+          </tr>
+          <tr>
+            <td>mtu</td>
+            <td id="mtu">1500</td>
+          </tr>
+        </tbody>
+      </table>
+      <input id="edit_button" type="button" value="Edit interface" onclick="edit_interface()" class="btn btn-dark">
+      <input id="save_interface" type="submit" value="Apply" onsubmit="apply_check()" class="btn btn-dark">
+    </form>
+
+  </article>
+  {% block javascript %}
+  <script>
+    {% include "js_scripts/host.js" %}
+  </script>
+  {% endblock %}
 </body>
-</html>
+{% endblock %}
