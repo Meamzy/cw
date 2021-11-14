@@ -7,15 +7,41 @@
     <title>Routers</title>
 </head>
 <body>
+    {% block content %}
     <article>
         <form method = "POST">
             <label for="chosen_interface">{{ hostname }} configuration:</label>
-            <select name="chosen_interface" id="chosen_interface">
-            {% for interface in interfaces.keys() %}
+            <select name="chosen_interface" id="chosen_interface" onchange="select_interface_info();">
+            {% for interface in interfaces_info.keys() %}
                 <option value="{{ interface }}">{{ interface }}</option>
             {% endfor %}
             </select>
           </form>
+      
+
+      {% for interface_name in interfaces_info.keys() %}
+        <table id="interface_info">   
+            <tr>
+                <th id="interface_name">{{ interface_name }}</th><th>Status</th>  
+            </tr>
+          <tr><td>is_enabled:</td> <td id="enabled_status">{{ interfaces_info[interface_name]['is_enabled'] }}</td></tr>
+
+        </table>
+      {% endfor %}
+     <pre>{{ interfaces_info }}</pre> 
     </article>
+    {% block javascript %}
+          <script>
+              var interfaces_info = {{ interfaces_info|safe|tojson }};
+              function select_interface_info(){
+                var interface_name = document.getElementById("chosen_interface").value;
+                document.getElementById("interface_name").textContent = interface_name;
+                alert(interfaces_info)
+                alert(interface_name)
+                alert(interfaces_info[interface_name])
+              };
+          </script>
+      {% endblock %}
+    {% endblock %}
 </body>
 </html>

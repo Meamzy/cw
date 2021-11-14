@@ -24,8 +24,9 @@ def hosts_page():
         form_data = request.form
         hostname = form_data["chosen_host"]
         interfaces = list_host_interfaces_info(hostname)
-       
-        return render_template("host.html",interfaces=interfaces,hostname=hostname)
+        interfaces_ip = json.dumps(interfaces[1],indent=2)
+        interfaces_info = json.dumps(interfaces[0],indent=2)
+        return render_template("host.html",interfaces_ip=interfaces_ip,interfaces_info=interfaces_info,hostname=hostname)
         # return form_data
     
 
