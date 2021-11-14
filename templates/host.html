@@ -6,42 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Routers</title>
 </head>
-<body>
+<body onload="select_interface_info()">
     {% block content %}
     <article>
-        <form method = "POST">
-            <label for="chosen_interface">{{ hostname }} configuration:</label>
-            <select name="chosen_interface" id="chosen_interface" onchange="select_interface_info();">
+            <form action="/edit" method="post" onsubmit="return checkform()">
+            <label for="chosen_interface">Choose interface</label>
+            <select name="chosen_interface" id="chosen_interface" onchange="select_interface_info()";>
             {% for interface in interfaces_info.keys() %}
                 <option value="{{ interface }}">{{ interface }}</option>
             {% endfor %}
             </select>
-          </form>
-      
+              <table id="interface_info">   
+                  <tbody><tr>
+                      <th id="interface_name"">FastEthernet0/0</th><th>Status</th>  
+                  </tr>
+                  <tr><td>ipv4_address:</td> <td><input id="ipv4_address" type="text" value="" name="ipv4_address"></td></tr>
+                  <tr><td>ipv4_mask:</td> <td><input id="ipv4_mask" type="text" value="" name="ipv4_mask"></td></tr>
+                  <tr><td>is_enabled:</td> <td>
+                      <select id="enabled_status" name="enabled_status">
+                          <option value="true">Up</option>
+                          <option value="false">Down</option>
+                      </select></td></tr>
+                  <tr><td>description</td> <td><input id="description" type="text" value="" name="description"></td></tr>
+                  <tr><td>is_up</td> <td id="up_status">true</td></tr>
+                  <tr><td>mac_address</td> <td id="mac_address">C4:01:03:DE:00:00</td></tr>
+                  <tr><td>last_flapped</td> <td id="last_flapped">-1</td></tr>
+                  <tr><td>speed</td> <td id="speed">10</td></tr>
+                  <tr><td>mtu</td> <td id="mtu">1500</td></tr>
+              </tbody></table>
+              <input id="edit_button" type="button" value="Edit interface" onclick="edit_interface()">
+              <input id="save_interface" type="submit" value="Apply" onsubmit="apply_check()">
+            </form>
 
-      {% for interface_name in interfaces_info.keys() %}
-        <table id="interface_info">   
-            <tr>
-                <th id="interface_name">{{ interface_name }}</th><th>Status</th>  
-            </tr>
-          <tr><td>is_enabled:</td> <td id="enabled_status">{{ interfaces_info[interface_name]['is_enabled'] }}</td></tr>
-
-        </table>
-      {% endfor %}
-     <pre>{{ interfaces_info }}</pre> 
     </article>
     {% block javascript %}
           <script>
-              var interfaces_info = {{ interfaces_info|safe|tojson }};
-              function select_interface_info(){
-                var interface_name = document.getElementById("chosen_interface").value;
-                document.getElementById("interface_name").textContent = interface_name;
-                alert(interfaces_info)
-                alert(interface_name)
-                alert(interfaces_info[interface_name])
-              };
+            {% include "js_scripts/host.js" %}
           </script>
       {% endblock %}
     {% endblock %}
+    
+    
 </body>
 </html>
