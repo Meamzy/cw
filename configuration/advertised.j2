@@ -1,0 +1,3 @@
+router bgp {{as_number}}
+{% for network_ip,network_mask in networks %} network {{network_ip}} mask {{network_mask}}
+{% endfor %}

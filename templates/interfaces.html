@@ -5,9 +5,21 @@
 
 <body onload="select_interface_info()" class="bg-secondary text-white">
   
-  <article  onload="select_interface_info();">
-    <form action="/edit" method="post" onsubmit="return checkform()">
-      <input name="hostname" class=".h3 bg-secondary text-white" value="{{ hostname }}" readonly/>
+  <article onload="select_interface_info();">
+    <form action="/interfaces" method="POST">
+      <select name="chosen_host" id="chosen_host" class="form-control form-control-lg" onchange="this.form.submit()">
+        {% for host in host_list %}
+        {% if hostname == host %}
+          <option value="{{ host }}" selected>{{ host }}</option>
+        {% else %}
+          <option value="{{ host }}">{{ host }}</option>
+        {% endif %}
+        {% endfor %}
+      </select>
+    </form>
+
+    <form action="/editint" method="post" onsubmit="return checkform()">    
+      <input type="hidden" name="hostname" value="{{ hostname }}" />
       <select name="chosen_interface" id="chosen_interface" onchange="select_interface_info();" class="form-control form-control-sm bg-secondary text-white" >
         {% for interface in interfaces_info.keys() %}
         <option value="{{ interface }}">{{ interface }}</option>
@@ -67,7 +79,7 @@
   </article>
   {% block javascript %}
   <script>
-    {% include "js_scripts/host.js" %}
+    {% include "js_scripts/interfaces.js" %}
   </script>
   {% endblock %}
 </body>

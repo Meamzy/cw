@@ -5,6 +5,13 @@ Installed napalm and it's requirements:
 pip3 install napalm
 sudo apt-get install -y --force-yes libssl-
 
+workon CW
+export FLASK_APP=web_flask
+export FLASK_ENV=development
+flask run
+export VIRTUALENVWRAPPER_PYTHON='/usr/bin/python3'
+source virtualenvwrapper.sh
+
 
 Router_commands:
 no ip domain-lookup

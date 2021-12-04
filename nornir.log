@@ -2972,3 +2972,1078 @@ EOFError: Channel stream closed by remote device.
 2021-11-14 17:34:47,979 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
 2021-11-14 17:35:56,261 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
 2021-11-14 17:35:58,056 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-11-14 19:10:27,725 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-11-14 19:10:29,478 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-11-14 19:10:30,840 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-11-14 19:10:32,623 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-01 20:24:38,177 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-01 20:24:43,206 - nornir.core.task -    ERROR -      start() - Host 'R1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 935, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/util.py", line 283, in retry_on_signal
+    return function()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 86, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 326, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco/cisco_ios.py", line 17, in __init__
+    return super().__init__(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 350, in __init__
+    self._open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 355, in _open
+    self.establish_connection()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 957, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.ssh_exception.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.10.10.14:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/ios/ios.py", line 169, in open
+    self.device = self._netmiko_open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 95, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.10.10.14
+
+2021-12-01 20:24:43,207 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-01 20:25:29,572 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-01 20:25:32,281 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-01 20:26:02,211 -  nornir.core -     INFO -        run() - Running task 'configure_interface' with args {'chosen_interface': 'FastEthernet0/1', 'ip_address': '10.10.11.15', 'ip_mask': '255.255.255.0', 'enabled_status': 'true', 'description': 'NEW INTERFACE'} on 1 hosts
+2021-12-01 20:26:09,786 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-01 20:26:12,545 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-03 19:37:47,730 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-03 19:37:52,751 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 935, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/util.py", line 283, in retry_on_signal
+    return function()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 86, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 326, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco/cisco_ios.py", line 17, in __init__
+    return super().__init__(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 350, in __init__
+    self._open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 355, in _open
+    self.establish_connection()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 957, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.ssh_exception.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.10.10.13:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/ios/ios.py", line 169, in open
+    self.device = self._netmiko_open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 95, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.10.10.13
+
+2021-12-03 19:37:52,751 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-03 19:38:07,897 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-03 19:38:10,531 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-03 19:39:16,582 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-03 19:39:21,614 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 935, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/util.py", line 283, in retry_on_signal
+    return function()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 86, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 326, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco/cisco_ios.py", line 17, in __init__
+    return super().__init__(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 350, in __init__
+    self._open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 355, in _open
+    self.establish_connection()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 957, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.ssh_exception.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.10.10.13:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/ios/ios.py", line 169, in open
+    self.device = self._netmiko_open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 95, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.10.10.13
+
+2021-12-03 19:39:21,614 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-03 19:41:20,492 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-03 19:41:25,496 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 935, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/util.py", line 283, in retry_on_signal
+    return function()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 86, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 326, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco/cisco_ios.py", line 17, in __init__
+    return super().__init__(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 350, in __init__
+    self._open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 355, in _open
+    self.establish_connection()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 957, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.ssh_exception.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.10.10.13:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/ios/ios.py", line 169, in open
+    self.device = self._netmiko_open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 95, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.10.10.13
+
+2021-12-03 19:41:25,496 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-03 19:44:37,199 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-03 19:44:42,210 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 935, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/util.py", line 283, in retry_on_signal
+    return function()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 86, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 326, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco/cisco_ios.py", line 17, in __init__
+    return super().__init__(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 350, in __init__
+    self._open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 355, in _open
+    self.establish_connection()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 957, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.ssh_exception.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.10.10.13:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/ios/ios.py", line 169, in open
+    self.device = self._netmiko_open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 95, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.10.10.13
+
+2021-12-03 19:44:42,210 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-03 19:45:08,367 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-03 19:45:11,109 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-03 19:46:41,966 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-03 19:46:46,970 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 935, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/util.py", line 283, in retry_on_signal
+    return function()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 86, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 326, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco/cisco_ios.py", line 17, in __init__
+    return super().__init__(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 350, in __init__
+    self._open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 355, in _open
+    self.establish_connection()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 957, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.ssh_exception.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.10.10.13:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/ios/ios.py", line 169, in open
+    self.device = self._netmiko_open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 95, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.10.10.13
+
+2021-12-03 19:46:46,971 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-03 19:49:57,773 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-03 19:50:02,785 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 935, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/util.py", line 283, in retry_on_signal
+    return function()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 86, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 326, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco/cisco_ios.py", line 17, in __init__
+    return super().__init__(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 350, in __init__
+    self._open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 355, in _open
+    self.establish_connection()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 957, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.ssh_exception.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.10.10.13:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/ios/ios.py", line 169, in open
+    self.device = self._netmiko_open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 95, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.10.10.13
+
+2021-12-03 19:50:02,785 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-03 19:55:44,902 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-03 19:55:49,917 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 935, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/util.py", line 283, in retry_on_signal
+    return function()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 86, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 326, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco/cisco_ios.py", line 17, in __init__
+    return super().__init__(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 350, in __init__
+    self._open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 355, in _open
+    self.establish_connection()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 957, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.ssh_exception.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.10.10.13:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/ios/ios.py", line 169, in open
+    self.device = self._netmiko_open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 95, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.10.10.13
+
+2021-12-03 19:55:49,918 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-03 19:56:27,990 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-03 19:56:33,002 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 935, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/util.py", line 283, in retry_on_signal
+    return function()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 86, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 326, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco/cisco_ios.py", line 17, in __init__
+    return super().__init__(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 350, in __init__
+    self._open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 355, in _open
+    self.establish_connection()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 957, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.ssh_exception.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.10.10.13:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/ios/ios.py", line 169, in open
+    self.device = self._netmiko_open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 95, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.10.10.13
+
+2021-12-03 19:56:33,002 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-03 20:07:02,095 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-03 20:07:07,103 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 935, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/util.py", line 283, in retry_on_signal
+    return function()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 86, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 326, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco/cisco_ios.py", line 17, in __init__
+    return super().__init__(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 350, in __init__
+    self._open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 355, in _open
+    self.establish_connection()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 957, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.ssh_exception.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.10.10.13:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/ios/ios.py", line 169, in open
+    self.device = self._netmiko_open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 95, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.10.10.13
+
+2021-12-03 20:07:07,104 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-03 20:07:15,813 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-03 20:07:18,188 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-03 20:08:20,551 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-03 20:08:25,560 - nornir.core.task -    ERROR -      start() - Host 'R3': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 935, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/util.py", line 283, in retry_on_signal
+    return function()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 86, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 326, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco/cisco_ios.py", line 17, in __init__
+    return super().__init__(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 350, in __init__
+    self._open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 355, in _open
+    self.establish_connection()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 957, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.ssh_exception.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.10.10.13:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/ios/ios.py", line 169, in open
+    self.device = self._netmiko_open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 95, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.10.10.13
+
+2021-12-03 20:08:25,561 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-03 20:10:55,869 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-03 20:11:00,885 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 935, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/util.py", line 283, in retry_on_signal
+    return function()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 86, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 326, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco/cisco_ios.py", line 17, in __init__
+    return super().__init__(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 350, in __init__
+    self._open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 355, in _open
+    self.establish_connection()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 957, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.ssh_exception.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.10.10.13:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/ios/ios.py", line 169, in open
+    self.device = self._netmiko_open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 95, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.10.10.13
+
+2021-12-03 20:11:00,888 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-03 20:11:52,506 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-03 20:11:53,531 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-03 20:13:30,650 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-03 20:13:31,672 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-03 20:14:03,748 -  nornir.core -     INFO -        run() - Running task 'configure_interface' with args {'chosen_interface': 'FastEthernet0/0', 'ip_address': '10.10.11.15', 'ip_mask': '255.255.255.0', 'enabled_status': 'true', 'description': "I've added one"} on 1 hosts
+2021-12-03 20:14:10,778 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-03 20:14:11,880 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-03 20:15:15,332 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-03 20:15:57,770 -  nornir.core -  WARNING -        run() - Task 'napalm_get' has not been run – 0 hosts selected
+2021-12-03 20:16:38,143 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-03 20:17:08,850 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-03 20:26:45,006 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-03 20:27:11,500 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-03 20:27:46,293 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-03 20:28:31,363 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-03 20:36:29,194 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-03 21:01:15,469 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-03 21:01:22,733 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-03 21:01:32,071 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-03 21:02:48,193 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-03 21:03:59,956 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-03 21:04:02,602 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-03 21:05:55,853 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-03 21:06:28,881 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-03 21:06:40,617 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-03 21:07:18,704 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-04 07:02:18,530 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-04 07:02:23,553 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 935, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/util.py", line 283, in retry_on_signal
+    return function()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 86, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 326, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco/cisco_ios.py", line 17, in __init__
+    return super().__init__(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 350, in __init__
+    self._open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 355, in _open
+    self.establish_connection()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 957, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.ssh_exception.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.10.10.13:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/ios/ios.py", line 169, in open
+    self.device = self._netmiko_open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 95, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.10.10.13
+
+2021-12-04 07:03:11,727 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-04 07:03:16,741 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 935, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/util.py", line 283, in retry_on_signal
+    return function()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 86, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 326, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco/cisco_ios.py", line 17, in __init__
+    return super().__init__(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 350, in __init__
+    self._open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 355, in _open
+    self.establish_connection()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 957, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.ssh_exception.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.10.10.13:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/ios/ios.py", line 169, in open
+    self.device = self._netmiko_open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 95, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.10.10.13
+
+2021-12-04 07:03:40,633 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-04 07:03:45,647 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 935, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/util.py", line 283, in retry_on_signal
+    return function()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 86, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 326, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco/cisco_ios.py", line 17, in __init__
+    return super().__init__(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 350, in __init__
+    self._open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 355, in _open
+    self.establish_connection()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 957, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.ssh_exception.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.10.10.13:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/ios/ios.py", line 169, in open
+    self.device = self._netmiko_open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 95, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.10.10.13
+
+2021-12-04 07:04:24,771 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-04 07:04:29,786 - nornir.core.task -    ERROR -      start() - Host 'R2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 935, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in connect
+    retry_on_signal(lambda: sock.connect(addr))
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/util.py", line 283, in retry_on_signal
+    return function()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/paramiko/client.py", line 349, in <lambda>
+    retry_on_signal(lambda: sock.connect(addr))
+TimeoutError: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 86, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/ssh_dispatcher.py", line 326, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/cisco/cisco_ios.py", line 17, in __init__
+    return super().__init__(*args, **kwargs)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 350, in __init__
+    self._open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 355, in _open
+    self.establish_connection()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/netmiko/base_connection.py", line 957, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.ssh_exception.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 10.10.10.13:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/ios/ios.py", line 169, in open
+    self.device = self._netmiko_open(
+  File "/home/mea/.virtualenvs/CW/lib/python3.10/site-packages/napalm/base/base.py", line 95, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 10.10.10.13
+
+2021-12-04 07:11:43,293 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-04 07:13:51,501 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-04 07:17:05,072 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 07:17:07,716 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 07:47:36,413 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 07:47:38,824 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 07:48:39,131 -  nornir.core -     INFO -        run() - Running task 'configure_interface' with args {'chosen_interface': 'FastEthernet0/1', 'ip_address': '23', 'ip_mask': '', 'enabled_status': 'true', 'description': ''} on 1 hosts
+2021-12-04 07:48:51,068 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 07:48:53,507 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 07:49:10,522 -  nornir.core -     INFO -        run() - Running task 'configure_interface' with args {'chosen_interface': 'FastEthernet0/1', 'ip_address': '10.10.10', 'ip_mask': '', 'enabled_status': 'true', 'description': ''} on 1 hosts
+2021-12-04 07:49:16,846 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 07:49:19,227 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 07:49:49,557 -  nornir.core -     INFO -        run() - Running task 'configure_interface' with args {'chosen_interface': 'FastEthernet1/0', 'ip_address': '255.255.255.255', 'ip_mask': '0.25.23.1', 'enabled_status': 'false', 'description': ''} on 1 hosts
+2021-12-04 07:49:58,779 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 07:50:01,180 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 08:00:53,419 -  nornir.core -     INFO -        run() - Running task 'configure_interface' with args {'chosen_interface': 'FastEthernet0/1', 'ip_address': '192.168.1.24', 'ip_mask': '255.255.255.0', 'enabled_status': 'true', 'description': 'new description'} on 1 hosts
+2021-12-04 08:10:32,907 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 08:10:35,431 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 08:11:12,580 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 08:11:15,008 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 08:18:42,934 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 08:18:45,435 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 08:18:50,659 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 08:18:51,838 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 08:19:00,450 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 08:19:01,470 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 08:23:07,952 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 08:23:10,378 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 08:23:16,169 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 08:23:17,165 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 08:23:48,230 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 08:23:50,771 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 08:23:55,814 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 08:23:56,830 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 08:25:00,068 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 08:25:02,521 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 08:25:07,641 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 08:25:08,581 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 08:28:28,693 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 08:28:29,792 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 08:28:34,433 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 08:28:35,499 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 08:28:40,358 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 08:28:41,427 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 08:30:09,391 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 08:30:10,371 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 08:30:42,516 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 08:30:43,529 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 08:31:13,948 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 08:31:16,398 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 08:31:40,484 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 08:31:42,863 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 08:32:20,627 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 08:32:23,147 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 08:33:09,817 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 08:33:12,292 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 08:33:16,998 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 08:33:18,012 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 08:33:25,689 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 08:33:28,069 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 16:34:33,698 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 16:34:37,179 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 16:35:01,012 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 16:35:07,056 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 16:35:28,051 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-04 16:40:33,125 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 16:40:35,749 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 16:44:01,345 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 16:44:06,474 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 16:44:25,021 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 16:44:29,092 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 16:44:35,666 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 16:44:37,491 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 16:49:01,083 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 16:49:05,126 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 16:54:20,787 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 16:54:22,833 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 16:58:25,246 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 16:58:29,001 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 16:59:34,865 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 16:59:37,856 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 16:59:55,552 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 16:59:59,616 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 17:00:58,896 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces']} on 1 hosts
+2021-12-04 17:01:02,534 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_interfaces_ip']} on 1 hosts
+2021-12-04 17:01:39,500 -  nornir.core -     INFO -        run() - Running task 'configure_interface' with args {'chosen_interface': 'FastEthernet0/1', 'ip_address': '192.168.1.24', 'ip_mask': '255.255.255.0', 'enabled_status': 'true', 'description': 'This is it'} on 1 hosts
+2021-12-04 17:03:58,369 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-04 17:06:53,797 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-04 17:07:30,646 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-04 17:07:43,129 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-04 17:08:05,523 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-04 17:12:39,267 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-04 17:16:45,607 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts
+2021-12-04 17:16:56,308 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_config']} on 1 hosts

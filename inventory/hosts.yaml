@@ -5,10 +5,11 @@ R1:
         - Router
     data:
         host: R1
-
-R3:
+        as_number: 200
+R2:
     hostname: 10.10.10.13
     groups:
         - Router
     data:
-        host: R3
+        host: R2
+        as_number: 200

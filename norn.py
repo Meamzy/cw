@@ -9,7 +9,7 @@ from nornir_napalm.plugins.tasks import napalm_get
 import json
 import os
 from ciscoconfparse import CiscoConfParse
-
+from validation import is_valid_ip4
 # def allocate_interface(task,interface_name: str,ip_address: str,ip_mask: str):
 #     inteface_config = task.run(task=template_file,template="interface.j2",path="configuration/",
 #     interface_name=interface_name,ip_address=ip_address,ip_mask=ip_mask)
@@ -44,24 +44,31 @@ def configure_interface(task,chosen_interface: str,ip_address: str,ip_mask: str,
     task.run(task=netmiko_send_config,config_commands=inteface_config_send)
     
 def configure_interface_request(data:dict):
+    print(data)
     description = data["description"]
     ipv4 = data["ipv4_address"]
     ipv4_mask = data["ipv4_mask"]
     enabled_status = data["enabled_status"]
     chosen_interface = data["chosen_interface"]
     host = data["hostname"]
-    nr = InitNornir(config_file="nornir_configuration/config.yaml")
-    nr = nr.filter(name=host)
-    result = nr.run(
-        task=configure_interface,
-        chosen_interface=chosen_interface,
-        ip_address=ipv4,
-        ip_mask=ipv4_mask,
-        enabled_status=enabled_status,
-        description=description
-        )
-    print_result(result)
-    return result
+    if description=="" or description==None:
+        description="None"
+    is_valid,error = is_valid_ip4(f"{ipv4}/{ipv4_mask}")
+    if is_valid:
+        nr = InitNornir(config_file="nornir_configuration/config.yaml")
+        nr = nr.filter(name=host)
+        result = nr.run(
+            task=configure_interface,
+            chosen_interface=chosen_interface,
+            ip_address=ipv4,
+            ip_mask=ipv4_mask,
+            enabled_status=enabled_status,
+            description=description
+            )
+        print_result(result)
+        return (True,error)
+    else:
+        return (False,error)
 
 def get_bgp_configuration(host):
     nr = InitNornir(config_file="nornir_configuration/config.yaml")
@@ -81,4 +88,27 @@ def get_advertised_networks(host):
     os.remove("cisco.conf")
     return networks
 
-# print(get_advertised_networks("R1"))
+def parse_single_network(advertised_network_string):
+    advertised_network_string = advertised_network_string.strip().split()
+    network_keyword,ipv4,mask_keyword,mask = advertised_network_string
+    return ipv4,mask
+
+def get_parsed_advertised_networks(host):
+    networks = get_advertised_networks(host)
+    parsed_adv_networks = []
+    for network in networks:
+        ipv4,mask = parse_single_network(network)
+        parsed_adv_networks.append([ipv4,mask])
+    return parsed_adv_networks
+
+def get_as_number(host):
+    nr = InitNornir(config_file="nornir_configuration/config.yaml")
+    as_number = nr.inventory.hosts[host].get("as_number")
+    return as_number
+
+def get_advertised_networks_info(host):
+    parsed_networks = get_parsed_advertised_networks(host)
+    as_number = get_as_number(host)
+    return as_number,parsed_networks
+
+# print(get_parsed_advertised_networks("R2"))
