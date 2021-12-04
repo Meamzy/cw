@@ -1,0 +1,9 @@
+{
+  "FastEthernet0/0": {
+    "ipv4": {
+      "10.10.10.11": {
+        "prefix_length": 24
+      }
+    }
+  }
+}

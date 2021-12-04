@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %} Advertised Networks  {% endblock %}
+
+{% block body %}
+<body class="bg-secondary text-white">
+<article>
+  <form action="/advertised_networks" method="POST">
+    <select name="chosen_host" id="chosen_host" class="form-control form-control-lg" onchange="this.form.submit()">
+      {% for host in host_list %}
+      {% if hostname == host %}
+        <option value="{{ host }}" selected>{{ host }}</option>
+      {% else %}
+        <option value="{{ host }}">{{ host }}</option>
+      {% endif %}
+      {% endfor %}
+    </select>
+
+  </form>
+    <label for="chosen_host" class="display-4">AS Number: {{ as_number }}</label> <br>
+
+    <form action="/edit_advertised_networks" method="post" onsubmit="return checkform()">    
+      <input type="hidden" name="hostname" value="{{ hostname }}" />
+      <table id="interface_info" class="table table-dark">
+        <tbody>
+          <tr>
+            <th id="interface_name">IPv4 Address</th><th>Mask</th>  
+                  </tr>
+                  {% for ip,mask in networks %}
+                  <tr>
+                    <td><input class="ipv4_address" type="text" value="{{ ip }}" name="ipv4_network_{{loop.index}}"></td> 
+                    <td><input class="ipv4_mask" type="text" value="{{ mask }}" name="ipv4_mask_{{loop.index}}"></td>
+                 </tr>
+                  {% endfor %}
+        </tbody>
+      </table>
+      <input id="edit_button" type="button" value="Edit interface" onclick="edit_interface()" class="btn btn-dark">
+      <input id="save_interface" type="submit" value="Apply" onsubmit="apply_check()" class="btn btn-dark">
+    </form>
+</article>
+
+
+
+
+{% endblock %}
+</body>

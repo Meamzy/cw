@@ -1,0 +1,9 @@
+{% for interface_name in interfaces_info|tojson|.keys()  %}
+        <table id="interface_info">   
+            <tr>
+                <th id="interface_name">{{ interface_name }}</th><th>Status</th>  
+            </tr>
+          <tr><td>is_enabled:</td> <td id="enabled_status">{{ interfaces_info[interface_name]['is_enabled'] }}</td></tr>
+
+        </table>
+      {% endfor %}
