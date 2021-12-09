@@ -1,7 +1,68 @@
 {% extends "base.html" %}
 {% block title %} Advertised Networks  {% endblock %}
 
+
 {% block body %}
+<script>
+  function add_adv_network(){
+    var table_row = document.createElement("tr");
+    var td_ipv4_addr = document.createElement("td");
+    var td_ipv4_mask = document.createElement("td");
+    var td_delete_button = document.createElement("td");
+    
+    var input_ipv4_addr = document.createElement("input");
+    var input_ipv4_mask = document.createElement("input");
+    var input_delete_button = document.createElement("input");
+
+    var the_lengh = 0;
+    var network_elements = document.getElementsByClassName("ipv4_address");
+    for (let item of network_elements) {
+      the_lengh = the_lengh + 1;
+     }
+    if (the_lengh > 0){
+      name_number = the_lengh+ 1;
+    }
+    else{
+      name_number = 1;
+    }
+    
+    
+    input_ipv4_addr.setAttribute("class","ipv4_address");
+    input_ipv4_addr.setAttribute("type","text");
+    input_ipv4_addr.setAttribute("value","");
+    input_ipv4_addr.setAttribute("name",`ipv4_network_${name_number}`);
+
+    input_ipv4_mask.setAttribute("class","ipv4_address");
+    input_ipv4_mask.setAttribute("type","text");
+    input_ipv4_mask.setAttribute("value","");
+    input_ipv4_mask.setAttribute("name",`ipv4_mask_${name_number}`);
+
+    input_delete_button.setAttribute("id","delete_subnet");
+    input_delete_button.setAttribute("type","submit");
+    input_delete_button.setAttribute("value","Delete");
+    input_delete_button.onclick = function () {delete_network(input_delete_button)};
+    input_delete_button.setAttribute("class","btn btn-danger");
+
+    td_ipv4_addr.appendChild(input_ipv4_addr);
+    td_ipv4_mask.appendChild(input_ipv4_mask);
+    td_delete_button.appendChild(input_delete_button);
+    table_row.appendChild(td_ipv4_addr);
+    table_row.appendChild(td_ipv4_mask);
+    table_row.appendChild(td_delete_button);
+
+    var table = document.getElementById("interfaces_table");
+    table.appendChild(table_row);
+  }
+
+  function delete_network(delete_button){
+    td_delete_button = delete_button.parentNode;
+    tr_network = td_delete_button.parentNode;
+    tr_network.remove();
+
+}
+
+
+</script>
 <body class="bg-secondary text-white">
 <article>
   <form action="/advertised_networks" method="POST">
@@ -21,20 +82,21 @@
     <form action="/edit_advertised_networks" method="post" onsubmit="return checkform()">    
       <input type="hidden" name="hostname" value="{{ hostname }}" />
       <table id="interface_info" class="table table-dark">
-        <tbody>
+        <tbody id="interfaces_table">
           <tr>
-            <th id="interface_name">IPv4 Address</th><th>Mask</th>  
-                  </tr>
+            <th id="interface_name">IPv4 Address</th><th>Mask</th><th><input id="add_network" type="button" value="Add Network" onclick="add_adv_network()" class="btn btn-success"></th>  
+          </tr>
                   {% for ip,mask in networks %}
                   <tr>
                     <td><input class="ipv4_address" type="text" value="{{ ip }}" name="ipv4_network_{{loop.index}}"></td> 
                     <td><input class="ipv4_mask" type="text" value="{{ mask }}" name="ipv4_mask_{{loop.index}}"></td>
+                    <td><input id="delete_subnet" type="submit" value="Delete" onclick="delete_network(this)" class="btn btn-danger"></td>
                  </tr>
                   {% endfor %}
         </tbody>
       </table>
-      <input id="edit_button" type="button" value="Edit interface" onclick="edit_interface()" class="btn btn-dark">
-      <input id="save_interface" type="submit" value="Apply" onsubmit="apply_check()" class="btn btn-dark">
+      <input id="save_changes" type="submit" value="Apply" onsubmit="" class="btn btn-dark">
+      
     </form>
 </article>
 

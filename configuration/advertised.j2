@@ -1,3 +1,9 @@
 router bgp {{as_number}}
-{% for network_ip,network_mask in networks %} network {{network_ip}} mask {{network_mask}}
+{% if add_diff is defined and add_diff|length > 0 %}
+{% for network_ip,network_mask in add_diff %} network {{network_ip}} mask {{network_mask}}
 {% endfor %}
+{% endif %}
+{% if delete_diff is defined and delete_diff|length > 0 %}
+{% for network_ip,network_mask in delete_diff %} no network {{network_ip}} mask {{network_mask}}
+{% endfor %}
+{% endif %}
