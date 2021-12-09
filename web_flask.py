@@ -68,3 +68,21 @@ def editint():
         "editint.html",
         data="Applied successfuly" if result[0] else f"Failed, the traceback:\n{result[1]}")
 
+@app.route("/edit_advertised_networks", methods = ['POST','GET'])
+def edit_adv_networks():
+    if request.method == 'GET':
+        return f"The URL /host is accessed directly. Try going to '/hosts' to submit form"
+    if request.method == 'POST':
+        return render_template("editnetworks.html", Data=edit_networks(request.form))
+
+@app.route("/guide", methods = ['GET'])
+def guide():
+    if request.method == 'GET':
+        return render_template(
+        "guide.html",)
+
+@app.route("/about", methods=["GET"])
+def about():
+    if request.method == 'GET':
+        return render_template(
+        "about.html",)
