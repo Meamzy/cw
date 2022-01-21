@@ -1,8 +1,2 @@
 25
 66
-
-This is a testing stuff for Test_1
-
-
-Hello there
-What are you doing
