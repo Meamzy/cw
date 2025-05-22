@@ -18,6 +18,16 @@
       </select>
     </form>
 
+    <!-- 
+      TODO: Consider adding a JavaScript-based loading indicator here.
+      When this form is submitted, the page will wait for the Nornir task to complete.
+      A loading spinner or message could be shown via JavaScript by:
+      1. Adding an element for the loading indicator (e.g., <div id="loading-spinner" style="display:none;">Loading...</div>).
+      2. Modifying the onsubmit event of the form:
+         - e.g., onsubmit="document.getElementById('loading-spinner').style.display='block'; return checkform();"
+      3. Ensuring that if checkform() returns false, the spinner is hidden again.
+      4. The spinner will automatically disappear when the page reloads/redirects after the POST request.
+    -->
     <form action="/editint" method="post" onsubmit="return checkform()">    
       <input type="hidden" name="hostname" value="{{ hostname }}" />
       <select name="chosen_interface" id="chosen_interface" onchange="select_interface_info();" class="form-control form-control-sm bg-secondary text-white" >
